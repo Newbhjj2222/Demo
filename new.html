@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="new.css" type="text/css" media="all" />
+  <title>site</title>
+</head>
+<body>
+  
+  <header class="head">
+    <div id="logo">
+      <span>The</span>
+      <span>Site</span>
+    </div>
+     <i class="fa fa-bars menu-toggle" id="menu-toggle"></i>
+
+<ul class="nav" id="nav-menu">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Service</a></li>
+  <li><a href="#">Contact</a></li>
+  <li><a href="#">Profile</a></li>
+</ul>
+  </header>
+  <div class="banner">
+    <div class="typing-text" id="slideText">"Advertise your business here and watch it grow. Contact us without hesitation to purchase advertising."
+
+</div>
+  </div>
+  <div class="news">
+    
+    <div class="posts">
+      <h2>Trending posts</h2>
+      <div class="post">
+        <img src="/template/photo/N6.jpeg">
+        <h1>post one</h1>
+        <p >the best template design by new talents stories group</p>
+      </div>
+      <div class="post">
+        <img src="/template/photo/N3.jpeg">
+        <h1>post two</h1>
+        <p>if you want to develop your website, use our tamplete.</p>
+      </div>
+      <div class="post">
+        <img src="/template/photo/100-news-update-high-resolution-logo.png">
+        <h1>post three</h1>
+        <p>we know everything you need. you need our tamplete inorder to get succuss.</p>
+      </div>
+    </div>
+    
+    <div class="side-bar">
+      <h2>CATEGORIES</h2>
+      <ul>
+        <li><a href="#">New post</a></li>
+        <li><a href="#">last post</a></li>
+        <li><a href="#">English</a></li>
+        <li><a href="#">new ads</a></li>
+        <li><a href="#">love story</a></li>
+        <li><a href="#">Art and design</a></li>
+      </ul>
+      
+    </div>
+  </div>
+  <div class="other">
+   <h2>OTHER POSTS</h2>
+   <div class="list">
+     <div class="list1">
+       <img src="/template/photo/n4.jpeg" alt="">
+       <p>this is the ather post about something</p>
+     </div>
+       <div class="list1">
+       <img src="/template/photo/OIG2 (1).jpeg" alt="">
+       <p>In English we say nothing for Nothing</p>
+     </div>
+  <div class="list1">
+     <img src="/template/photo/OIG2 (3).jpeg" alt="">
+     <p>this template is very cheap</p>
+  </div>
+  <div class="list1">
+<img src="/template/photo/N6.jpeg" alt="">
+<p>to developer is very successful</p>
+  </div>
+  <div class="list1">
+<img src="/template/photo/n4.jpeg" alt="">
+<p>grow your business by the best website advertising site.</p>
+  </div>
+   </div>
+  </div>
+  <footer class="footer">
+    <div class="quick">
+         <div class="footer-section a">
+                <a href="#" class="footer-link">
+                    <i class="fas fa-home"></i> Home
+                </a>
+                <a href="#" class="footer-link">
+                    <i class="fas fa-user"></i> Profile
+                </a>
+                
+            </div>
+    </div>
+    <div class="about">
+     <span>This template is affordable, and you can use it to grow your business by purchasing it and turning it into your own website. Contact us right here.
+
+</span>
+      
+    </div>
+    <div class="contact">
+        <span class="email">newtalents403@gmail.com</span>
+        <span class="phone">0780786300</span>
+      </div>
+      <div class="links">
+        <div class="footer-section c">
+                <a href="#" class="footer-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="#" class="footer-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="footer-icon">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#"class="footer-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        
+      </div>
+      <div class="footer-bottom">
+            &copy; 2025 New Talents publisher | All Rights Reserved.
+        </div>
+  </footer>
+<script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const navMenu = document.getElementById('nav-menu');
+
+  toggleBtn.addEventListener('click', function () {
+    if (navMenu.style.display === 'none' || navMenu.style.display === '') {
+      navMenu.style.display = 'block';
+    } else {
+      navMenu.style.display = 'none';
+    }
+  });
+  const text = document.getElementById('slideText');
+  let position = window.innerWidth;
+
+  function slide() {
+    position -= 10; // Umuvuduko wa slide
+    text.style.left = position + 'px';
+
+    // Nurangiza kugera ibumoso cyane, subira inyuma
+    if (position + text.offsetWidth < 0) {
+      position = window.innerWidth;
+    }
+
+    requestAnimationFrame(slide); // Recursive animation
+  }
+
+  slide();
+</script>
+</script>
+  
+</body>
+</html>

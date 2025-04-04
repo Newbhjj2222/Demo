@@ -1,0 +1,394 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  
+}
+header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 60px;
+  padding: 10px;
+  background: darkslategrey;
+  color: #fff;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+
+}
+.menu-toggle{
+  display: none;
+}
+#logo{
+  padding: 5px;
+  float: left;
+  width: auto;
+  border-radius: 19px;
+  border: 1px solid yellow;
+}
+#logo span{
+  font-weight: bold;
+  font-size: 10px;
+}
+#logo span:nth-child(1){
+  color: red;
+  font-style: italic;
+  font-size: 38px;
+}
+/* Gutunganya urutonde (ul) */
+.head ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin-right: 20px;
+  padding: 0;
+}
+
+.head ul li {
+  display: inline;
+}
+
+.head ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+
+.head ul li a:hover {
+  background-color: #f39c12;
+  color: black;
+  border-radius: 5px;
+}
+@keyframes typing { from { width: 0; } to { width: 100%; } }
+
+@keyframes blink { 50% { border-color: transparent; } }
+
+.banner { 
+  background-color: #333; 
+  top: 70px; 
+  display: inline-block;
+  padding: 20px; 
+  width: 100%;
+  overflow: hidden;
+  z-index: 1000;
+  position: fixed;
+}
+
+.typing-text { 
+  display: inline-block; 
+  overflow: hidden;
+  white-space: nowrap; 
+  border-right: 2px solid white;
+  font-size:  auto; 
+  color: white; 
+  width: 0; animation: typing 10s steps(100, end) infinite alternate, blink 0.7s step-end infinite;
+  font-family: monospace;
+
+    }
+
+
+  .news{
+    top: 140px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin-bottom: 40px;
+    border: 1px solid darkgray;
+  }
+  .news h2{
+    text-align: center;
+    font-size: 34px;
+    color: green;
+    font-weight: bold;
+  }
+.posts{
+  width: 700px;
+  padding: 10px;
+  float: left;
+  overflow: hidden;
+  border: 1px solid darkgrey;
+  
+}
+.posts h1{
+  font-weight: bold;
+  color: cadetblue;
+}
+.posts img{
+  width: 380px;
+  height: 390px;
+  border-radius: 12px;
+  margin: 5px;
+}
+.posts .post{
+  border: 1px solid lightgrey;
+  padding: 5px;
+}
+.posts .post p{
+  font-weight: bold;
+  
+}
+.post:hover{
+  background: wheat;
+  color: red;
+}
+.side-bar{
+  margin-left: 10px;
+  border: 1px solid darkgrey;
+  width: auto;
+  padding: 10px;
+}
+.side-bar h2{
+  font-family: monospace;
+}
+.side-bar ul{
+  list-style: none;
+  
+}
+.side-bar ul li{
+  padding: 5px;
+  background: white;
+  border: 1px solid gainsboro;
+  text-align: center;
+  border-radius: 8px;
+}
+.side-bar ul li:hover{
+  background: cornsilk;
+  color: red;
+}
+.side-bar ul li a{
+  text-decoration: none;
+  color: blue;
+  font-size: 25px;
+}
+.side-bar ul li a:hover{
+  color: red;
+  background: none;
+}
+.other{
+  margin-top: 180px;
+  margin-bottom: 60px;
+  border: 1px solid slategrey;
+}
+.list1{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  border: 1px solid gainsboro;
+  border-radius: 9px;
+}
+.list1 img{
+  height: 129px;
+  border-radius: 12px;
+  margin-right: 10px;
+}
+.list1 p{
+  float: right;
+  margin-left: 10px;
+}
+.list1:hover{
+  background: #EEE8ED;
+  color: red;
+}
+.other h2{
+  text-align: center;
+}
+.footer {
+    background-color: darkslategrey;
+    color: #f0f0f0;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer a {
+    color: #f0f0f0;
+    text-decoration: none;
+    margin: 8px 0;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #00b894;
+}
+
+.footer .footer-section {
+    margin-bottom: 20px;
+}
+
+.footer .footer-link i,
+.footer .footer-icon i {
+    margin-right: 8px;
+}
+
+.footer .quick,
+.footer .links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer .about,
+.footer .contact {
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer .email,
+.footer .phone {
+    display: block;
+    margin: 5px 0;
+}
+
+.footer .footer-icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.footer .footer-icon:hover {
+    transform: scale(1.2);
+    color: #00b894;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    margin-top: 30px;
+    font-size: 13px;
+    color: #ccc;
+}
+/* Big screens (desktops) */
+@media (min-width: 1025px) {
+  .footer .quick,
+  .footer .links {
+    justify-content: space-evenly;
+  }
+ 
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer .quick,
+  .footer .links {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer .footer-section {
+    flex: 1;
+    margin: 10px;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 767px) {
+  .footer {
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .footer .quick,
+  .footer .links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .footer-section {
+    margin-bottom: 15px;
+  }
+
+  .footer .footer-icon {
+    margin: 8px;
+  }
+
+  .footer .email,
+  .footer .phone {
+    font-size: 14px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+ .news{
+    width: 100%;
+    flex-direction: column;
+  }
+  .news img{
+    width: 60%;
+    height: 220px;
+  }
+  .posts{
+    width: auto;
+  }
+  .banner{
+    width: 100%;
+    padding: 5px;
+    height: auto;
+    font-size: auto;
+  }
+ /* Menu nyirizina (nav) - ihishe default */
+.nav {
+  position: absolute;
+  top: 105px; /* bigendeye kuri aho icon iherereye */
+  right: 0px;
+  width: 200px;
+  background: darkslategrey;
+  padding: 10px;
+  border-radius: 5px;
+  display: none; /* ihishe default */
+  list-style: none;
+  z-index: 1000;
+}
+
+.nav li {
+  margin: 10px 0;
+}
+
+.nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+  transition: background 0.3s;
+  
+}
+
+.nav li a:hover {
+  background: #555;
+  border-radius: 3px;
+}
+
+.nav.active {
+  display: none;
+}
+
+/* Optional: icon ya menu */
+.menu-toggle {
+  font-size: 24px;
+  cursor: pointer;
+  display: block;
+margin-right: 30px;
+}
+#nav-menu{
+  display: none;
+}
+.typing-text{
+  font-size: 1vw;
+}
+  
+
+}
